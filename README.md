@@ -8,13 +8,18 @@ First, I will be creating the ALU it will have the following operations:
 4. OR
 
 Since this is only an RISC CPU, it will only have 4 operations. I will be using a 4:1 multiplexer to select a specific operation and compute the results to be output. To make an adder, I made a truth table:
-| Cin | A | B | Cout | S |
-|-----|---|---|------|---|
-|  0  | 0 | 0 |   0  | 0 |
-|  0  | 0 | 1 |   0  | 1 |
-|  0  | 1 | 0 |   0  | 1 |
-|  0  | 1 | 1 |   1  | 0 |
-|  1  | 0 | 0 |   0  | 1 |
-|  1  | 0 | 1 |   1  | 0 |
-|  1  | 1 | 0 |   1  | 0 |
-|  1  | 1 | 1 |   1  | 1 |
+
+| A | B | Cin | S | Cout |
+|---|---|-----|---|------|
+| 0 | 0 |  0  | 0 |   0  |
+| 0 | 0 |  1  | 1 |   0  |
+| 0 | 1 |  0  | 1 |   0  |
+| 0 | 1 |  1  | 0 |   1  |
+| 1 | 0 |  0  | 1 |   0  |
+| 1 | 0 |  1  | 0 |   1  |
+| 1 | 1 |  0  | 0 |   1  |
+| 1 | 1 |  1  | 1 |   1  |
+
+From this truth table, we can put these results in a K-map and figure out the Boolean equation for S(Sum) and Cout(Carry).
+S = A XOR B XOR Cin
+Cout = (A AND B) OR ((A XOR B) AND Cin)
