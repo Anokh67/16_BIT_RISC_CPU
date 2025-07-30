@@ -7,3 +7,9 @@ In my ALU, I have created 8 simple operations. Two of them are arithmetic, and t
 6. A XOR B
 7. A NAND B
 8. A NOR B
+
+I have also created two different flags in the ALU
+1. Carry/borrow
+2. Zero
+
+The carry/borrow flag comes from the adder and subtractor itself, respectively. The zero flag was made by using the output data and comparing it with the value 0; if it was the same, the flag would become 1.
