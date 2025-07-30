@@ -1,1 +1,9 @@
 In my ALU, I have created 8 simple operations. Two of them are arithmetic, and the other six are logic. 
+1. ADD
+2. SUB
+3. NOT A
+4. A AND B
+5. A OR B
+6. A XOR B
+7. A NAND B
+8. A NOR B
