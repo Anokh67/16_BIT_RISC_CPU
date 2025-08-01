@@ -11,5 +11,8 @@ In my ALU, I have created 8 simple operations. Two of them are arithmetic, and t
 I have also created two different flags in the ALU
 1. Carry/borrow
 2. Zero
+3. Negative
 
-The carry/borrow flag comes from the adder and subtractor itself, respectively. The zero flag was made by using the output data and comparing it with the value 0; if it was the same, the flag would become 1.
+
+
+The carry/borrow flag comes from the adder and subtractor itself, respectively. The zero flag was made by using the output data and comparing it with the value 0; if it was the same, the flag would become 1. Negative flag is checked to see if the MSB is 1 or 0.
