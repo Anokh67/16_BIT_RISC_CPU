@@ -1,0 +1,15 @@
+Having a clock is very important to ensure all tasks are in sync. Although it may seem difficult to create, it is very straightforward.
+I have included 4 different types of input
+1. The clock input
+2. Enable the clock
+3. Manual tick
+4. Stop
+
+- Enable must always be on to allow the clock to cycle.
+- Clock input must be 1 to start the clock cycle.
+- The manual tick allows the user to check what happens after one cycle.
+  - The enable does not have to be one during a manual tick
+- Stop makes the cycles halt.
+
+
+
