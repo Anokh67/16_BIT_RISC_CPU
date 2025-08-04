@@ -1,34 +1,32 @@
-## 📦 CPU Registers Overview
+# Overview
 
-Registers are important because they **temporarily store data and instructions** that the CPU is currently using.  
-In this build, I have **6 registers**:
+Registers are important because they temporarily store data and instructions that the CPU is currently using.  
+This design includes a total of 6 registers, divided into two main categories: data registers and control registers.
 
----
+### Data Registers
 
-### 🗂️ **Data Registers**
+These registers are used to store and manipulate data during instruction execution:
 
-These registers are used to store and manipulate data during execution:
+1. **AccA** – Accumulator A
+2. **AccB** – Accumulator B
+3. **X_and_Y** – Shared register for auxiliary data or indexing
 
-1. **AccA**
-2. **AccB**
-3. **X_and_Y**
 
----
 
-### 📍 **Program Counter (PC)**
+#### Control Registers
 
-> **Holds the address of the next instruction** the CPU will fetch from memory.
+These registers manage the flow of instruction execution and memory access:
 
----
+##### Program Counter (PC)
 
-### 🧭 **Memory Address Register (MAR)**
+Holds the address of the next instruction the CPU will fetch from memory.
 
-> **Holds the address of the memory location in RAM** that the CPU wants to access for a specific task, such as reading or writing data.
+##### Memory Address Register (MAR)
 
----
+Holds the address of the memory location in RAM that the CPU wants to access for a specific task, such as reading or writing data.
 
-### 🧠 **Instruction Register (IR)**
+##### Instruction Register (IR)
 
-> **Holds the actual instruction** being executed by the CPU.
+Holds the actual instruction being executed by the CPU.
 
----
+
