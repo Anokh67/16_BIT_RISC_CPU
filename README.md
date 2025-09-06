@@ -6,8 +6,6 @@ The CPU is capable of executing a custom instruction set that includes arithmeti
 
 The main objective of this project was to gain hands-on experience with **computer architecture** by designing a CPU completely from scratch — from datapath and control logic to instruction set definition and testing.  
 
----
-
 ## Features
 - **16-bit datapath** supporting a custom RISC instruction set.  
 - **Arithmetic Logic Unit (ALU)** for addition, subtraction, bitwise operations, and comparisons.  
@@ -17,14 +15,10 @@ The main objective of this project was to gain hands-on experience with **comput
 - **Memory interface** supporting load and store operations.  
 - Fully testable in **Logisim Evolution**, with working example programs.  
 
----
-
 ## Tools & Technologies
 - **Logisim Evolution** – schematic-level CPU design and simulation.  
 - **Digital Logic Design** – combinational/sequential circuits, control signals, datapath design.  
 - **Computer Architecture** – instruction set design, execution cycle, and memory organization.  
-
----
 
 ## What I Learned
 - How to design a **custom instruction set architecture (ISA)** tailored for a 16-bit RISC CPU.  
